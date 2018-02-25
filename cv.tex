@@ -1,11 +1,12 @@
 \documentclass[10pt]{article}
+
 \usepackage{multicol}
 \usepackage[margin=2cm]{geometry}
 \usepackage{array}
 \usepackage{xcolor}
 \usepackage{lipsum}
 \usepackage{mathptmx}
-\usepackage[scaled=1]{helvet}% Helvetica, served as a model for arial
+\usepackage[scaled=1]{helvet}
 \usepackage{fullpage}
 \usepackage[explicit]{titlesec}
 
@@ -14,7 +15,6 @@
 \newcolumntype{L}{>{\raggedleft}p{0.21\textwidth}}
 \newcolumntype{R}{p{0.74\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
-
 
 \titleformat{\section}
 {\normalfont\sffamily\Large\bfseries}
@@ -46,48 +46,43 @@
 \begin{minipage}[ht]{0.48\textwidth}
     \begin{description}
         \item[Address] \hfill \\
-            120 Bonchurch Road \\
+            9 Frederick Gardens \\
             Brighton \\
-            BN2 3PH
+            BN1 4TB \\
     \end{description}
 \end{minipage}
 
 \section*{Education}
 \begin{tabular}{L!{\VRule}R}
-    2014 -- present & {\bf University Of Sussex} \\
-                & Ongoing Bsc in Computer Science. Expecting a 1st.\\ [5pt]
+    2014 -- 2017 & {\bf University Of Sussex} \\
+                 & Bsc in Computer Science. First class honours.\\ [5pt]
     2013 -- 2014 & {\bf Central Sussex College} \\
                  & Computer Science Foundation degree, associated with the University of Sussex.
 \end{tabular}
 \section*{Work Experience}
 \begin{tabular}{L!{\VRule}R}
-    Jan 2017 -- present & \textbf{Scala Developer, Paper Plane Software} \\
-                        & Working on all aspects of a Play application, from
+    Sept 2017 -- Present & \textbf{Java Developer, Brandwatch} \\
+                        & I was part of the architecture team
+                        responsible for porting legacy infrastructure to a new distribute storage
+                        system, which formed a part of a larger microservice based architecture. \\ [5pt]
+    Jan 2017 -- Sept 2017 & \textbf{Scala Developer, Paper Plane Software} \\
+                        & Working on all aspects of a Play application development, from
                         interacting with clients and deployment to managing tasks
-                        and implementing new features. I have personally
-                        also been responsible increasing the test coverage of
-                        this application, which was previously minimal.
-                        \\ [5pt]
-    Sept 2016 -- present & \textbf{Informatics Student Rep} \\
-                        & Connected 3rd year Informatics
-                        students with faculty of the school. Communication
-                        and organization was important in this role.\\ [5pt]
-    Feb 2016 -- present & \textbf{Peer Assisted Learning Tutor} \\
-                        & Led informal study sessions aimed at first year students,
-                        and helped them develop their Java and general computing 
-                        skills. \\ [5pt]
+                        and implementing whole applications. I was personally
+                        responsible for increasing the test coverage of
+                        an application, which was previously minimal. \\ [5pt]
     Jun 2016 -- Sept 2016 & \textbf{Junior Research Associate} \\
-                        & Implementing a research compiler for a new functional 
+                        & Implementing a research compiler for a new functional
                         language with a highly expressive type system, as part
                         of research into higher kinded types. Implemented in
                         Haskell, and interfaced to LLVM for code generation.
                         Supervisor was Dr. Martin Berger. \\ [5pt]
-    June 2014 -- Sept 2014 & \textbf{Renovation Work in Germany} \\
-                 & Assisted a family with renovation work on their historic farm. 
-                    Duties included caring for heavy equipment and allocation of time
-                    as work was mostly unsupervised.\\ [5pt]
+    Feb 2016 -- May 2017 & \textbf{Peer Assisted Learning Tutor} \\
+                        & Led informal study sessions aimed at first year students,
+                        and helped them develop their Java and general computing
+                        skills. \\ [5pt]
     Sept 2011 -- Feb 2014 & \textbf{Communications Systems Operator, Territorial Army}\\
-                & As second in command of a communications detachment I 
+                & As second in command of a communications detachment I
                     maintained and operated a variety of
                     sensitive and complex equipment. Teamwork was essential in
                     this role as was attention to detail, especially under
@@ -97,14 +92,13 @@
 \section*{Technologies}
 \begin{multicols}{2}
 \begin{itemize}
-    \itemsep0em 
+    \itemsep0em
+    \item Scala, including SBT, Play framework, Cats functional programming library
     \item Haskell
-    \item Scala, including Play web framework and Cats
-    \item Javascript, including Vue framework and ES6 features
-    \item Java
-    \item Python
-    \item Git, vim, bash, and general command line tools
-    \item PostgreSQL
+    \item Javascript, including Vue, Backbone, and React frameworks, familiar with ES6 features
+    \item Java, including Spring framework and Ratpack
+    \item PostgreSQL, Apache Lucene / Solr
+    \item Git, Python, vim, bash, and general command line tools
 \end{itemize}
 \end{multicols}
 
