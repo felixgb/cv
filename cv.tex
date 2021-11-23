@@ -6,7 +6,6 @@
 \usepackage{xcolor}
 \usepackage{mathptmx}
 \usepackage[scaled=1]{helvet}
-% \usepackage{fullpage}
 \usepackage[explicit]{titlesec}
 
 \definecolor{lightgray}{gray}{0.8}
@@ -19,10 +18,11 @@
 {\normalfont\sffamily\Large\bfseries}
 {}{1em}{#1}
 
-\title{\vspace{-12ex}\sffamily\bfseries\huge Felix Bowman \vspace{-6ex}}
+\title{\vspace{-16ex}\sffamily\bfseries\huge Felix Bowman \vspace{-6ex}}
 \date{}
 \pagenumbering{gobble}
 \begin{document}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
 \begin{minipage}{0.74\textwidth}
 \begingroup
 \let\center\flushleft
@@ -31,40 +31,38 @@
 \endgroup
 \end{minipage}
 
-\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
 
 \vspace{1em}
 \begin{minipage}[ht]{0.48\textwidth}
     \begin{description}
         \item[Email] \hfill \\
-            felixgbowman@gmail.com
+            felix@enceladus.software
         \item[Mobile] \hfill \\
             07858 794190
     \end{description}
 \end{minipage}
-\begin{minipage}[ht]{0.48\textwidth}
-    \begin{description}
-        \item[Address] \hfill \\
-            Flat 3 
-            18-20 Stanford Avenue \\
-            Brighton \\
-            BN1 6AA \\
-    \end{description}
-\end{minipage}
+% \begin{minipage}[ht]{0.48\textwidth}
+%     \begin{description}
+%         % \item[Address] \hfill \\
+%     \end{description}
+% \end{minipage}
 
 \section*{Work Experience}
 \begin{tabular}{L!{\VRule}R}
-    June 2019 -- Present & \textbf{Scala Developer, IQVIA} \\
+    Oct 2020 -- Present & \textbf{Scala Developer, HMRC (Contract)} \\
+                        & Designed and implemented a microservice to facilitate
+                        data sharing between government departments on an
+                        extremely tight deadline. \\ [5pt]
+    June 2019 -- July 2020 & \textbf{Scala Developer, IQVIA} \\
                           & Worked on a team developing a product for
-                          converting patient medical records from one
-                          relational format to a common relational format.
+                          converting patient medical records from disparate
+                          relational formats to a common relational format.
                           Apache Spark was used to ETL patient data, on the
                           scale of tens of terabytes. Personally developed a
                           workflow and ETL monitoring tool using Akka Typed
                           Actors. \\ [5pt]
     Oct 2018 -- June 2019 & \textbf{Freelance} \\
-                          & Various projects involving WebGL, ThreeJS, Vue.js \\
-                          [5pt]
+                          & Various projects involving WebGL, ThreeJS, Vue.js \\ [5pt]
     % Oct 2018 -- May 2019 & \textbf{Full Stack Developer, Hybird} \\
     %                       & Full stack developer working on a suite of
     %                       applications for mapping and modelling using LIDAR.
@@ -100,13 +98,6 @@
                         maintained and operated a variety of sensitive and complex
                         equipment. Teamwork was essential in this role as was attention
                         to detail, especially under stressful conditions. \\
-
-
-%    Sept 2011 -- Feb 2014 & \textbf{Communications Systems Operator, Territorial Army}\\
-%                        & As second in command of a communications detachment I
-%                        maintained and operated a variety of sensitive and complex
-%                        equipment. Teamwork was essential in this role as was attention
-%                        to detail, especially under stressful conditions. \\
 \end{tabular}
 
 \section*{Education}
@@ -122,9 +113,9 @@
 \begin{itemize}
     \itemsep0em
     \item Scala, including SBT, Play framework, Cats, Akka, functional streaming libraries
-    \item Haskell
     \item Typescript, Javascript ES6
     \item WebGL, GLSL, three.js
+    \item Haskell
     \item Python, numpy
     \item Docker, docker-compose
     \item PostgreSQL, MySQL

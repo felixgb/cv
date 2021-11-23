@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
+RELOAD_KEYS="CTRL+R"
+BROWSER="blah"
+
+inotifywait -e close_write,moved_to,create -m . |
+while read -r directory events filename; do
+  if [ "${filename: -4}" == ".tex" ]; then
+    printf "\033c"
+		printf "${GREEN}reloaded $filename ${NC}\n"
+    pdflatex -interaction=nonstopmode *.tex 
+
+  fi
+done
